@@ -401,8 +401,17 @@
     background-color: #222224;
 }
 
-.img {
-    
+.icons_block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 36px;
+    padding-right: 33px;
+    padding-top: 48px;
+}
+
+
+.icon_size {
+   height: 32px;
 }
 
 .heading_banner_text {
