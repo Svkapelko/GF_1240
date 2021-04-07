@@ -245,3 +245,179 @@
     color: #f16d7f;
     text-transform: uppercase;
 }
+
+/*Блок <product_list>*/
+
+.product_list {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.heading_product {
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #222222;
+}
+
+.text_product {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.86;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #9f9f9f;
+}
+
+/*.card_box {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.card_box_top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 39px;
+}
+
+.card_box_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 58px;
+}
+
+.card {
+    width: 264px;
+    height: 281px;
+    background-position: center;
+}
+
+.card_1 {
+    background-image: url("img/card_1.png");
+}
+
+.card_2 {
+    background-image: url("img/card_2.png");
+}
+
+.card_3 {
+    background-image: url("img/card_3.png");
+}
+
+.card_4 {
+    background-image: url("img/card_4.png");
+    background-position: 25% 75%;
+}
+
+.card_5 {
+    background-image: url("img/card_5.png");
+}
+
+.card_6 {
+    background-image: url("img/card_6.png");
+    background-position: top;
+}
+
+.card_7 {
+    background-image: url("img/card_7.png");
+    background-position: bottom;
+}
+
+.card_8 {
+    background-image: url("img/card_8.png");  
+}
+
+.product_item {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 14px;
+    background-color: #ffffff;
+}
+
+.heading_product_item {
+    font-size: 13px;
+    color: #222222;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+}
+
+.price {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f16d7f;
+}
+
+.card_item {
+    text-decoration: none;
+}
+
+.product_button {
+
+}
+
+.card_item:hover {
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.browse_all {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.38;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 24px;
+    padding-right: 43px;
+}
+
+/*Блок <banner>*/
+
+.banner {
+    display: flex;
+    padding-top: 113px;
+}
+
+.banner_left {
+    display: flex;
+    flex-grow: 1;
+    /*background-image: url("img/banner_image.png");*/
+}
+
+.banner_right {
+    display: flex;
+    background-color: #222224;
+}
+
+.img {
+    
+}
+
+.heading_banner_text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #fbfbfb;
+}
+
+.banner_text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #fbfbfb;
+}
