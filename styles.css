@@ -167,22 +167,22 @@
     color: #f16d7f;
 }
 
-/*Блок <banners>*/
+/*Блок <offers>*/
 
-.banners_box {
+.offers_box {
     display: flex;
     justify-content: space-between;
     padding-top: 99px;
     padding-bottom: 99px;
 }
 
-.banners_block_left {
+.offers_block_left {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.banners_block_right {
+.offers_block_right {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -234,14 +234,12 @@
     letter-spacing: 0.45px;
     color: #222222;
     text-transform: uppercase;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
 }
 
 .card_text_bottom {
     font-size: 30px;
     letter-spacing: 0.75px;
+    font-weight: 900;
     color: #f16d7f;
     text-transform: uppercase;
 }
@@ -256,20 +254,16 @@
 .heading_product {
     font-size: 30px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.8;
+    /*line-height: 1.8;*/
     letter-spacing: 0.75px;
     text-align: center;
     color: #222222;
+    padding-bottom: 16px;
 }
 
 .text_product {
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 3.86;
+    /*line-height: 3.86;*/
     letter-spacing: 0.35px;
     text-align: center;
     color: #9f9f9f;
@@ -387,31 +381,48 @@
 
 .banner {
     display: flex;
-    padding-top: 113px;
+    padding-top: 113px;  
+    padding-bottom: 97px;
 }
 
 .banner_left {
-    display: flex;
-    flex-grow: 1;
-    /*background-image: url("img/banner_image.png");*/
+    width: 767px;
+    height: 529px;
+    background-image: url("img/banner_image_2.png");
+    background-position: top left;
+    position: relative;
+}
+
+.banner_left_text{
+    position: absolute;
+    top: 146px;
+    left: 39px;
+}
+
+.banner_left_text_top {
+    font-size: 53.5px;
+    letter-spacing: 1.34px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.offer {
+    color: #f16d7f;
+}
+
+.banner_left_text_bottom {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .banner_right {
-    display: flex;
+    width: 373px;
+    height: 529px;
     background-color: #222224;
-}
-
-.icons_block {
-    display: flex;
-    flex-direction: column;
-    padding-left: 36px;
-    padding-right: 33px;
-    padding-top: 48px;
-}
-
-
-.icon_size {
-   height: 32px;
 }
 
 .heading_banner_text {
@@ -420,6 +431,7 @@
     letter-spacing: 0.5px;
     text-align: left;
     color: #fbfbfb;
+    padding-bottom: 16px;
 }
 
 .banner_text {
@@ -429,4 +441,55 @@
     letter-spacing: 0.35px;
     text-align: left;
     color: #fbfbfb;
+}
+
+.delivery {
+    position: relative;
+    /*width: 219px;*/
+    padding: 53px 43px 50px 111px;
+}
+
+.delivery:before {
+    content: url("img/delivery.svg");
+    position: absolute;
+    left: 36px;
+}
+
+.sales {
+    position: relative;
+    /*width: 219px;*/
+    padding-left: 111px;
+    padding-bottom: 50px;
+    padding-right: 43px;
+}
+
+.sales:before {
+    content: url("img/sales.svg");
+    position: absolute;
+    left: 36px;
+}
+
+.quality {
+    position: relative;
+    padding-left: 111px;
+    padding-bottom: 50px;
+    padding-right: 43px;
+}
+
+.quality:before {
+    content: url("img/quality.svg");
+    position: absolute;
+    left: 36px;
+}
+
+/*Блок <subscribe_block*/
+
+.subscribe_block {
+    height: 438px;
+    background-image: url("img/sea_back.png");
+    background-repeat: no-repeat;
+    /*[ 190px*/ 
+    background-position: 0 -145px;
+    background-size: 100%;
+    opacity: 0.5;
 }
