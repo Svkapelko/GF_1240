@@ -482,7 +482,7 @@
     left: 36px;
 }
 
-/*Блок <subscribe_block*/
+/*Блок <subscribe_block> - много вопросов*/
 
 .subscribe_block {
     height: 438px;
@@ -492,4 +492,130 @@
     background-position: 0 -145px;
     background-size: 100%;
     opacity: 0.5;
+    display: flex;
+}
+
+.subscribe_block_left {
+    width: 50%;
+    height: 100%;
+    border-right: 2px solid lightgrey;
+    display: inline-block;
+}
+
+.subscribe_block_right {
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+.review {
+    display: flex;
+    padding-top: 111px;
+    padding-right: 68px;
+}
+
+.review_text {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.63;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #222224;
+}
+
+.bin_burhan{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.63;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #f16d7f;
+    padding-top: 17px;
+}
+
+.dhaka {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    letter-spacing: 0.3px;
+    color: #222224;
+}
+
+.face {
+    float: left;
+    padding-right: 28px;
+    height: 83px;
+}
+    
+.subscribe_form {
+    padding-left: 92px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    outline: none;
+}
+
+.subscribe_form input[type=email] {
+    height: 46px;
+    border-radius: 23px 0 0 23px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.35px;
+    background-color: #e1e1e1;
+    color: rgba(34, 34, 36, 0.67);
+    border: 1px solid transparent;
+    padding-left: 28px;
+    padding-right: 148px;
+    box-sizing: border-box;
+    /*float: left;*/
+}
+
+.subscribe_form button[type=submit] {
+    padding-left: 21px;
+    padding-right: 21px;
+    height: 46px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.35px;
+    border-radius: 0 23px 23px 0;
+    border: 1px solid transparent;
+    border-left: none;
+    box-sizing: border-box;
+    /*cursor: pointer;
+    float: left;*/
+}
+    
+.subscribe_form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.subscribe_text {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.subscribe_heading {
+    font-size: 24px;
+    /*line-height: 2.25;*/
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.subscribe_heading_bottom {
+    font-size: 14px;
+    /*line-height: 1.71;*/
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+/*Блок footer*/
+.footer_block {
+    padding-top: 109px;
 }
