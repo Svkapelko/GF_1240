@@ -605,6 +605,69 @@
     color: #f7f7f8;
 }
 
+.price {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+/*Блок <crumbs>*/
+
+.crumbs {
+    background-color: #f8f3f4;   
+    height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.crumbs_parent {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.arrivals_heading {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.breadcrumbs li {
+    list-style-type: none;
+    margin-left: 2px;
+}
+
+.breadcrumb-item-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #636363;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item-link-active {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f16d7f;
+}
+
+.breadcrumb-item-link:hover {
+    color: #f16d7f;
+}
+
 /* Центрирование от родителя к ребёнку */
 
 .center_vertical {
@@ -628,11 +691,3 @@
 }
 
 
-.price {
-    display: block;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: #f16d7f;
-}
