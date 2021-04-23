@@ -11,7 +11,8 @@
     background-color: #ffffff;
 }
 
-.container {
+/*меняю container на fixed box, чтобы избежать конфликтов с бутсраповским контейнером*/
+.fixed_box {
     width: 1140px;
     margin: 0 auto;
 }
