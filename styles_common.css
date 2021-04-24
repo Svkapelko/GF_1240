@@ -617,14 +617,14 @@
 
 /*Блок <crumbs>*/
 
-.crumbs {
+.breadcrumbs {
     background-color: #f8f3f4;   
     height: 148px;
     display: flex;
     align-items: center;
 }
 
-.crumbs_parent {
+.breadcrumbs_parent {
     display: flex;
     justify-content: space-between;
     height: 100%;
@@ -638,18 +638,18 @@
     color: #f16d7f;
 }
 
-.breadcrumbs {
+.crumbs {
     display: flex;
     justify-content: center;
     height: 100%;
 }
 
-.breadcrumbs li {
+.crumbs li {
     list-style-type: none;
     margin-left: 2px;
 }
 
-.breadcrumb-item-link {
+.crumbs-item-link {
     text-decoration: none;
     font-size: 14px;
     line-height: 20px;
@@ -658,14 +658,14 @@
     text-transform: uppercase;
 }
 
-.breadcrumb-item-link-active {
+.crumbs-item-link-active {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     color: #f16d7f;
 }
 
-.breadcrumb-item-link:hover {
+.crumbs-item-link:hover {
     color: #f16d7f;
 }
 
@@ -691,4 +691,11 @@
     margin: auto;
 }
 
+.scale_rotation {
+    transition: 1s; /* Время эффекта */
+}
 
+.scale_rotation:hover {
+    transform: rotate(90deg) scale(0.5);; /* Увеличиваем масштаб */
+}
+  

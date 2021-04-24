@@ -4,30 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_common.css">
     <link rel="stylesheet" href="styles_checkout.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="header_block fixed_box">
             <div class="header_left">
-                <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo">
+                <a class="logo" href="index.html"><img class="scale_rotation" src="img/logo.svg" alt="logo">
                 <span class="logo_text">BRAN<span class="logo_last_letter">D</span></span>
                 </a>
                 <form class="search_form" action="action_page.php">
@@ -278,137 +267,58 @@
         </div>    
     </nav>   
 
-    <div class="crumbs">
+    <nav class="breadcrumbs">
         <div class="fixed_box">
-             <div class="crumbs_parent">
+             <div class="breadcrumbs_parent">
                  <div class="new_arrivals">
                      <h3 class="arrivals_heading">New Arrivals</h3>
                  </div>
-                 <ul class="breadcrumbs">
-                     <li><a class="breadcrumb-item-link" href="#">Home /</a></li>
-                     <li><a class="breadcrumb-item-link" href="#">Men /</a></li>
-                     <li><a class="breadcrumb-item-link-active" href="#">New Arrivals</a></li>
+                 <ul class="crumbs">
+                     <li><a class="crumbs-item-link" href="#">Home /</a></li>
+                     <li><a class="crumbs-item-link" href="#">Men /</a></li>
+                     <li><a class="crumbs-item-link-active" href="#">New Arrivals</a></li>
                  </ul>
             </div> 
         </div> 
-     </div>
-
-    <!--<div class="checkout">
-        <div class="fixed_box">
-            <div class="checkout_block">
-                <ol>
-                    <li class="checkout_text ">Shipping Adress</li>
-                    <div class="form_parent">
-                        <form action="">
-                            <div class="register"></div>
-                            <div class="log_in"></div>
-                        </form>                        
-                    </div>
-                        
-                    <div class="form_devider"></div>
-                    <li class="checkout_text">BILLING INFORMATION</li>
-                    <div class="form_devider"></div>
-                    <li class="checkout_text">SHIPPING INFORMATION</li>
-                    <div class="form_devider"></div>
-                    <li class="checkout_text">SHIPPING METHOD</li>
-                    <div class="form_devider"></div>
-                    <li class="checkout_text">PAYMENT METHOD</li>
-                    <div class="form_devider"></div>
-                    <li class="checkout_text">ORDER REVIEW</li>
-                    <div class="form_devider"></div>
-                </ol>                
-            </div>
-        </div>
-    </div> !-->
-
-
-    <!--
-    <div class="fixed_box"> 
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="acc_header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Shipping Adress
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="acc_header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">BILLING INFORMATION
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-            </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="acc_header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">SHIPPING INFORMATION
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="acc_header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">SHIPPING METHOD</button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="acc_header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">PAYMENT METHOD</button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="acc_header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">ORDER REVIEW</button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-     
-    -->
-
+    </nav>
 
     <div class="fixed_box">
         <div class="checkout_block">
-            <!--<div class="accordion_item">-->
-                <button class="accordion accordion_header">Shipping Adress</button>
-                <div class="panel">
-                    <div class="panel_contents">
-                        <div class="register">
+            <button class="accordion accordion_header">01. Shipping Address</button>
+            <div class="panel">
+                <div class="panel_contents">
+                    <div class="register">
                             <h4 class="accordion_form_header">Check as a guest or register</h4>
                             <p class="accordion_form_text">Register with us for future convenience</p>
                             <form class="form_mini" action="#">                           
-                                <label class="form_mini_txt"><input type="radio" name="guest" value="checkout as a guest">checkout as a guest</label>
-                                <label class="form_mini_txt"><input type="radio" name="guest" value="register" checked>register</label>        
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="checkout as a guest">
+                                    <span class="radio_text">checkout as a guest</span>
+                                </label>
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="register" checked>
+                                    <span class="radio_text">register</span>
+                                </label>        
                             </form>    
                                                         
                             <h4 class="accordion_form_header">register and save time!</h4>   
                             <p class="accordion_form_text">Register with us for future convenience</p>
 
                             <div class="accordion_form_block">
-                                <p class="accordion_form_text">Fast and easy checkout</p>
-                                <p class="accordion_form_text">Easy access to your order history and status</p>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>
+                                    <span class="accordion_form_text">Fast and easy checkout</span>
+                                </a>
+                                <br>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>                                  
+                                    <span class="accordion_form_text">Easy access to your order history and status</span>
+                                </a>                               
                             </div>   
                                 
                             <button class="acc_button">Continue</button>
-                        </div>
-                
-                        <div class="log_in">
+                    </div>                
+                    <div class="log_in">
                             <h4 class="accordion_form_header">Already registed?</h4>
                             <p class="accordion_form_text">Please log in below</p>
                             <form class="form_mini" action="#">
@@ -420,51 +330,293 @@
                                 <span class="accordion_form_text r_fields">*Required Fileds</span> 
 
 
-                                <div class="">
+                                <div class="acc_forgot_block">
                                     <button class="acc_button">Log in</button>
                                     <p class="forgot_text">Forgot Password?</p> 
                                 </div>
                             </form>
-                        </div>  
-                    </div>                                          
-                </div>
-                <div class="form_devider"></div>
-            <!--</div>-->
-
-
-            <button class="accordion accordion_header">Shipping Adress</button>
-            <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>  
+                </div>                                          
             </div>
             <div class="form_devider"></div>
 
-            <button class="accordion accordion_header">BILLING INFORMATION</button>
+            <button class="accordion accordion_header">02. BILLING INFORMATION</button>
             <div class="panel">
-                <p>Lorem ipsum dolor.</p>
+                <div class="panel_contents">
+                    <div class="register">
+                            <h4 class="accordion_form_header">Check as a guest or register</h4>
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+                            <form class="form_mini" action="#">                           
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="checkout as a guest">
+                                    <span class="radio_text">checkout as a guest</span>
+                                </label>
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="register" checked>
+                                    <span class="radio_text">register</span>
+                                </label>        
+                            </form>    
+                                                        
+                            <h4 class="accordion_form_header">register and save time!</h4>   
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+
+                            <div class="accordion_form_block">
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>
+                                    <span class="accordion_form_text">Fast and easy checkout</span>
+                                </a>
+                                <br>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>                                  
+                                    <span class="accordion_form_text">Easy access to your order history and status</span>
+                                </a>                               
+                            </div>   
+                                
+                            <button class="acc_button">Continue</button>
+                    </div>                
+                    <div class="log_in">
+                            <h4 class="accordion_form_header">Already registed?</h4>
+                            <p class="accordion_form_text">Please log in below</p>
+                            <form class="form_mini" action="#">
+                                <label class="form_mini_label">EMAIL ADDRESS </label>
+                                <input type="email" required="">
+                                <label class="form_mini_label">PASSWORD</label>
+                                <input type="password" required="">
+                                                        
+                                <span class="accordion_form_text r_fields">*Required Fileds</span> 
+
+
+                                <div class="acc_forgot_block">
+                                    <button class="acc_button">Log in</button>
+                                    <p class="forgot_text">Forgot Password?</p> 
+                                </div>
+                            </form>
+                    </div>  
+                </div>                                          
             </div>
             <div class="form_devider"></div>
 
-            <button class="accordion accordion_header">SHIPPING INFORMATION</button>
+            <button class="accordion accordion_header">03. SHIPPING INFORMATION</button>
             <div class="panel">
-                <p>Lorem ipsum dolor.</p>
+                <div class="panel_contents">
+                    <div class="register">
+                            <h4 class="accordion_form_header">Check as a guest or register</h4>
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+                            <form class="form_mini" action="#">                           
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="checkout as a guest">
+                                    <span class="radio_text">checkout as a guest</span>
+                                </label>
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="register" checked>
+                                    <span class="radio_text">register</span>
+                                </label>        
+                            </form>    
+                                                        
+                            <h4 class="accordion_form_header">register and save time!</h4>   
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+
+                            <div class="accordion_form_block">
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>
+                                    <span class="accordion_form_text">Fast and easy checkout</span>
+                                </a>
+                                <br>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>                                  
+                                    <span class="accordion_form_text">Easy access to your order history and status</span>
+                                </a>                               
+                            </div>   
+                                
+                            <button class="acc_button">Continue</button>
+                    </div>                
+                    <div class="log_in">
+                            <h4 class="accordion_form_header">Already registed?</h4>
+                            <p class="accordion_form_text">Please log in below</p>
+                            <form class="form_mini" action="#">
+                                <label class="form_mini_label">EMAIL ADDRESS </label>
+                                <input type="email" required="">
+                                <label class="form_mini_label">PASSWORD</label>
+                                <input type="password" required="">
+                                                        
+                                <span class="accordion_form_text r_fields">*Required Fileds</span> 
+
+
+                                <div class="acc_forgot_block">
+                                    <button class="acc_button">Log in</button>
+                                    <p class="forgot_text">Forgot Password?</p> 
+                                </div>
+                            </form>
+                    </div>  
+                </div>                                          
             </div>
             <div class="form_devider"></div>
 
-            <button class="accordion accordion_header">SHIPPING METHOD</button>
+            <button class="accordion accordion_header">04. SHIPPING METHOD</button>
             <div class="panel">
-                <p>Lorem ipsum dolor</p>
+                <div class="panel_contents">
+                    <div class="register">
+                            <h4 class="accordion_form_header">Check as a guest or register</h4>
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+                            <form class="form_mini" action="#">                           
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="checkout as a guest">
+                                    <span class="radio_text">checkout as a guest</span>
+                                </label>
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="register" checked>
+                                    <span class="radio_text">register</span>
+                                </label>        
+                            </form>    
+                                                        
+                            <h4 class="accordion_form_header">register and save time!</h4>   
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+
+                            <div class="accordion_form_block">
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>
+                                    <span class="accordion_form_text">Fast and easy checkout</span>
+                                </a>
+                                <br>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>                                  
+                                    <span class="accordion_form_text">Easy access to your order history and status</span>
+                                </a>                               
+                            </div>   
+                                
+                            <button class="acc_button">Continue</button>
+                    </div>                
+                    <div class="log_in">
+                            <h4 class="accordion_form_header">Already registed?</h4>
+                            <p class="accordion_form_text">Please log in below</p>
+                            <form class="form_mini" action="#">
+                                <label class="form_mini_label">EMAIL ADDRESS </label>
+                                <input type="email" required="">
+                                <label class="form_mini_label">PASSWORD</label>
+                                <input type="password" required="">
+                                                        
+                                <span class="accordion_form_text r_fields">*Required Fileds</span> 
+
+
+                                <div class="acc_forgot_block">
+                                    <button class="acc_button">Log in</button>
+                                    <p class="forgot_text">Forgot Password?</p> 
+                                </div>
+                            </form>
+                    </div>  
+                </div>                                          
             </div>
             <div class="form_devider"></div>
             
-            <button class="accordion accordion_header">PAYMENT METHOD</button>
+            <button class="accordion accordion_header">05. PAYMENT METHOD</button>
             <div class="panel">
-                <p>Lorem ipsum dolor.</p>
+                <div class="panel_contents">
+                    <div class="register">
+                            <h4 class="accordion_form_header">Check as a guest or register</h4>
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+                            <form class="form_mini" action="#">                           
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="checkout as a guest">
+                                    <span class="radio_text">checkout as a guest</span>
+                                </label>
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="register" checked>
+                                    <span class="radio_text">register</span>
+                                </label>        
+                            </form>    
+                                                        
+                            <h4 class="accordion_form_header">register and save time!</h4>   
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+
+                            <div class="accordion_form_block">
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>
+                                    <span class="accordion_form_text">Fast and easy checkout</span>
+                                </a>
+                                <br>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>                                  
+                                    <span class="accordion_form_text">Easy access to your order history and status</span>
+                                </a>                               
+                            </div>   
+                                
+                            <button class="acc_button">Continue</button>
+                    </div>                
+                    <div class="log_in">
+                            <h4 class="accordion_form_header">Already registed?</h4>
+                            <p class="accordion_form_text">Please log in below</p>
+                            <form class="form_mini" action="#">
+                                <label class="form_mini_label">EMAIL ADDRESS </label>
+                                <input type="email" required="">
+                                <label class="form_mini_label">PASSWORD</label>
+                                <input type="password" required="">
+                                                        
+                                <span class="accordion_form_text r_fields">*Required Fileds</span> 
+
+
+                                <div class="acc_forgot_block">
+                                    <button class="acc_button">Log in</button>
+                                    <p class="forgot_text">Forgot Password?</p> 
+                                </div>
+                            </form>
+                    </div>  
+                </div>                                          
             </div>
             <div class="form_devider"></div>
 
-            <button class="accordion accordion_header">ORDER REVIEW</button>
+            <button class="accordion accordion_header">06. ORDER REVIEW</button>
             <div class="panel">
-                <p>Lorem ipsum dolor.</p>
+                <div class="panel_contents">
+                    <div class="register">
+                            <h4 class="accordion_form_header">Check as a guest or register</h4>
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+                            <form class="form_mini" action="#">                           
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="checkout as a guest">
+                                    <span class="radio_text">checkout as a guest</span>
+                                </label>
+                                <label class="form_mini_txt center_vertical">
+                                    <input class="form_mini_radio" type="radio" name="guest" value="register" checked>
+                                    <span class="radio_text">register</span>
+                                </label>        
+                            </form>    
+                                                        
+                            <h4 class="accordion_form_header">register and save time!</h4>   
+                            <p class="accordion_form_text">Register with us for future convenience</p>
+
+                            <div class="accordion_form_block">
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>
+                                    <span class="accordion_form_text">Fast and easy checkout</span>
+                                </a>
+                                <br>
+                                <a class="acc_form_block_link" href="#">
+                                    <i class="fa fa_acc fa-angle-double-right accordion_form_text" aria-hidden="true"></i>                                  
+                                    <span class="accordion_form_text">Easy access to your order history and status</span>
+                                </a>                               
+                            </div>   
+                                
+                            <button class="acc_button">Continue</button>
+                    </div>                
+                    <div class="log_in">
+                            <h4 class="accordion_form_header">Already registed?</h4>
+                            <p class="accordion_form_text">Please log in below</p>
+                            <form class="form_mini" action="#">
+                                <label class="form_mini_label">EMAIL ADDRESS </label>
+                                <input type="email" required="">
+                                <label class="form_mini_label">PASSWORD</label>
+                                <input type="password" required="">
+                                                        
+                                <span class="accordion_form_text r_fields">*Required Fileds</span> 
+
+
+                                <div class="acc_forgot_block">
+                                    <button class="acc_button">Log in</button>
+                                    <p class="forgot_text">Forgot Password?</p> 
+                                </div>
+                            </form>
+                    </div>  
+                </div>                                          
             </div>
             <div class="form_devider"></div>
 
@@ -483,6 +635,8 @@
                     } 
                 });
             }
+            // Открываем первый элемент аккордеона
+            acc[0].click();
             </script>
         </div>
     </div>
@@ -531,7 +685,7 @@
             <div class="footer_block">
                 <div class="footer_top">
                     <div class="footer_left">
-                        <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo">
+                        <a class="logo" href="index.html"><img class="scale_rotation" src="img/logo.svg" alt="logo">
                         <span class="logo_text">BRAN<span class="logo_last_letter">D</span></span></a>
                         <div class="footer_text_block">
                             <p class="footer_text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
