@@ -1,0 +1,355 @@
+/*Блок <slider>*/
+
+.slider {
+    height: 614px;
+    background-color: #e8e8e8;
+}
+
+.slider_block {
+    height: 100%;
+    background: url("img/slider.png") no-repeat 0 -151px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.slider_text {
+    position: absolute;
+    top: 224px;
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+}
+
+.slider_text_top {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 1.5px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.slider_text_bottom {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 1px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.fashion {
+    color: #f16d7f;
+}
+
+/*Блок <offers>*/
+
+.offers_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 99px;
+    padding-bottom: 99px;
+}
+
+.offers_block_left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.offers_block_right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card_top_left {
+    background-image: url("img/for_man.png");
+    width: 560px;
+    height: 542px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.card_bottom_left {
+    background-image: url("img/accesories.png");
+    width: 560px;
+    height: 261px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.card_top_right {
+    background-image: url("img/women.png");
+    width: 560px;
+    height: 261px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.card_bottom_right {
+    background-image: url("img/for_kids.png");
+    width: 560px;
+    height: 542px;
+    position: relative;
+}
+
+.card_text {
+    position: absolute;
+    top: 26px;
+    background-color: #ffffff;
+    padding: 16px 19px;
+}
+
+.card_text_top {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.45px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.card_text_bottom {
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 900;
+    color: #f16d7f;
+    text-transform: uppercase;
+}
+
+/*Блок <product_list>*/
+
+.card_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    /*margin-bottom: 60px;*/
+}
+
+.item {
+    width: 263px;
+    position: relative;
+    margin-bottom: 39px;
+}
+
+.item:hover{
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.item:hover .item_pic {
+    filter: brightness(50%);
+}
+
+.item_link {
+    display: block;
+    text-decoration: none;
+    width: 263px;
+}
+
+.item_pic {
+    width: 100%;
+}
+
+.product_item {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 14px;
+    background-color: #ffffff;
+}
+
+.product_item_text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 17px;
+}
+
+
+
+.heading_product {
+    font-size: 30px;
+    font-weight: 700;
+    /*line-height: 54px;*/
+    letter-spacing: 0.025em;
+    text-align: center;
+    color: #222222;
+    padding-bottom: 16px;
+}
+
+.text_product {
+    font-size: 14px;
+    font-weight: 400;
+    /*line-height: 3.86;*/
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #9f9f9f;
+}
+
+.add_box {
+    position: absolute;
+    top: 98px;
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.add:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.add {
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 7px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.item:hover .add_box {
+    display: flex;
+}
+
+.add_text {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.cart {
+    margin-right: 10px;
+}
+
+.button_box {
+    display: block;
+    text-align: center;
+}
+
+.browse_all {
+    font-size: 16px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-align: center;
+    padding: 19px 19px;
+}
+
+.fa_arrow {
+    font-size: 15px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    margin-left: 9px;
+}
+
+/*Блок <banner>*/
+
+.banner {
+    display: flex;
+    padding-top: 113px;  
+    padding-bottom: 97px;
+}
+
+.banner_left {
+    width: 767px;
+    height: 529px;
+    background-image: url("img/banner_image_2.png");
+    background-position: top left;
+    position: relative;
+}
+
+.banner_left_text{
+    position: absolute;
+    top: 146px;
+    left: 39px;
+}
+
+.banner_left_text_top {
+    font-size: 53.5px;
+    letter-spacing: 1.34px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.offer {
+    color: #f16d7f;
+}
+
+.banner_left_text_bottom {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.banner_right {
+    width: 373px;
+    height: 529px;
+    background-color: #222224;
+}
+
+.heading_banner_text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #fbfbfb;
+    padding-bottom: 16px;
+}
+
+.banner_text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    text-align: left;
+    color: #fbfbfb;
+}
+
+.delivery {
+    position: relative;
+    /*width: 219px;*/
+    padding: 53px 43px 50px 111px;
+}
+
+.delivery:before {
+    content: url("img/delivery.svg");
+    position: absolute;
+    left: 36px;
+}
+
+.sales {
+    position: relative;
+    /*width: 219px;*/
+    padding-left: 111px;
+    padding-bottom: 50px;
+    padding-right: 43px;
+}
+
+.sales:before {
+    content: url("img/sales.svg");
+    position: absolute;
+    left: 36px;
+}
+
+.quality {
+    position: relative;
+    padding-left: 111px;
+    padding-bottom: 50px;
+    padding-right: 43px;
+}
+
+.quality:before {
+    content: url("img/quality.svg");
+    position: absolute;
+    left: 36px;
+}
