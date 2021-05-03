@@ -57,11 +57,19 @@ th:first-child {
     margin-bottom: 38px;
 }
 
+.product_details_text:hover {
+    color: #f16d7f;
+}
+
 .pr_details_txt {
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
     color: #575757;
+}
+
+.pr_details_txt:hover {
+    color: #f16d7f;
 }
 
 .pr_details_span {
@@ -77,6 +85,10 @@ th:first-child {
     color: #656565;
 }
 
+.pr_styles:hover {
+    color: #f16d7f;
+}
+
 .nums {
     width: 54px;  
     background-color: #ffffff;
@@ -85,14 +97,6 @@ th:first-child {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.fa_table {
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #c0c0c0;
 }
 
 .shopping_cart_buttons {
