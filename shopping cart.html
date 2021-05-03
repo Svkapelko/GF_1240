@@ -16,15 +16,15 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <nav class="header">
         <div class="header_block fixed_box">
             <div class="header_left">
                 <a class="logo" href="index.html"><img class="scale_rotation" src="img/logo.svg" alt="logo">
                 <span class="logo_text">BRAN<span class="logo_last_letter">D</span></span>
                 </a>
-                <form class="search_form" action="action_page.php">
+                <form class="search_form" action="#">
                     <details>
-                        <summary class="browse_button browse_text">Browse<i class="fa_style fa fa-caret-down"></i>
+                        <summary class="browse_button browse_text">Browse
                         </summary>
                         <div class="dropdown_box">
                             <div class="dropdown_menu_item">
@@ -54,21 +54,81 @@
                             </div>
                         </div>
                     </details>
-                    <input type="text" placeholder="Search for item..." name="search" required><button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" placeholder="Search for item..." name="search" required>
+                    <button type="submit"><i class="scale fa fa-search"></i></input>
                 </form>
             </div>
             <div class="header_right">
-                <img src="img/basket.svg" alt="busket">
-                <a class="button_site my_account" href="#">My Account</a>
+                <div class="header_basket_parent">
+                    <img class="header_basket" src="img/basket.svg" alt="busket">
+                    <div class="cart_box">
+                        <div class="cart_item">
+                            <a class="cart_img" href="single page.html">
+                                <img class="cart_pic" src="img/cart_item1.png" alt="cart photo">
+                            </a>
+                            <div class="cart_item_info">
+                                <div class="cart_item_text">
+                                    <p class="cart_item_txt">Rebox Zane</p>
+                                </div>
+                                <div class="cart_stars">
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="cart_form">
+                                    <p class="cart_form_txt">1 <span class="small">x</span>  $250</p>
+                                </div>   
+                            </div>    
+                            <div class="cart_item_right child_center_margin">
+                                <i class="fa fa_table fa-times-circle" aria-hidden="true"></i>
+                            </div>   
+                        </div>
+                        <div class="cart_item_devider"></div>
+                        <div class="cart_item">
+                            <a class="cart_img" href="single page.html">
+                                <img class="cart_pic" src="img/cart_item_2.png" alt="cart photo">
+                            </a>
+                            <div class="cart_item_info">
+                                <div class="cart_item_text">
+                                    <p class="cart_item_txt">Rebox Zane</p>
+                                </div>
+                                <div class="cart_stars">
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa_cart fa fa-star-half-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="cart_form">
+                                    <p class="cart_form_txt">1 <span class="small">x</span>  $250</p>
+                                </div>  
+                            </div>    
+                            <div class="cart_item_right child_center_margin">
+                                <i class="fa fa_table fa-times-circle" aria-hidden="true"></i>
+                            </div>   
+                        </div>
+                        <div class="cart_item_devider"></div>
+                        <div class="total_cart">
+                            <span class="total_txt">TOTAL</span>
+                            <span class="total_txt">$500.00</span>  
+                        </div>
+                        <a class="button_site cart_button" href="checkout.html">Checkout</a>
+                        <a class="button_grey cart_button" href="shopping cart.html">Go to cart</a>
+                    </div>
+                </div>
+                <a class="button_site my_account" href="#">My Account</a>                   
             </div>
         </div>
-    </header>
+    </nav>
     
     <nav class="navigation">
         <div class="fixed_box">
             <ul class="menu">
-                <li class="menu-list"><a class="menu-link" href="#">Home</a>
-                <div class="mega-box">
+                <li class="menu-list">
+                    <a class="menu-link" href="index.html">Home</a>
+                    <div class="mega-box">
                         <div class="mega-item">
                             <h3 class="item_heading">Women</h3>
                              <ul>
@@ -116,7 +176,7 @@
                         </div>
                 </div>
                 </li>
-                <li class="menu-list"><a class="menu-link menu-link:active" href="#">Man</a>
+                <li class="menu-list"><a class="menu-link menu-link-active" href="#">Man</a>
                 <div class="mega-box">
                     <div class="mega-item">
                         <h3 class="item_heading">Women</h3>
@@ -263,8 +323,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">Accoseriese</a>
-                    <div class="mega-box">
+                <li class="menu-list menu-list-position"><a class="menu-link" href="#">Accoseriese</a>
+                    <div class="mega-box mega-box-position">
                         <div class="mega-item">
                             <h3 class="item_heading">Women</h3>
                              <ul>
@@ -312,8 +372,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">Featured</a>
-                    <div class="mega-box">
+                <li class="menu-list menu-list-position"><a class="menu-link" href="#">Featured</a>
+                    <div class="mega-box mega-box-position">
                         <div class="mega-item">
                             <h3 class="item_heading">Women</h3>
                              <ul>
@@ -361,8 +421,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a class="menu-link" href="#">Hot Deals</a>
-                    <div class="mega-box">
+                <li class="menu-list menu-list-position"><a class="menu-link" href="#">Hot Deals</a>
+                    <div class="mega-box mega-box-position">
                         <div class="mega-item">
                             <h3 class="item_heading">Women</h3>
                              <ul>
@@ -412,7 +472,7 @@
                 </li>
             </ul>
         </div>    
-    </nav> 
+    </nav>  
     
     <nav class="breadcrumbs">
         <div class="fixed_box">
@@ -443,7 +503,7 @@
                     </tr>
                     <tr>
                         <td class="row_styles b_b">
-                            <a href="#"><img class="table_img" src="img/shop_card_1_1.png" alt="photo"></a>
+                            <a href="single page.html"><img class="table_img" src="img/shop_card_1_1.png" alt="photo"></a>
                         </td>
                         <td class="col1 b_b">
                             <p class="product_details_text">Mango People T-shirt</p> 
@@ -462,7 +522,7 @@
                     </tr>
                     <tr>
                         <td class="row_styles b_b">
-                            <a href="#"><img class="table_img" src="img/shop_card_2_2.png" alt="photo"></a>
+                            <a href="single page.html"><img class="table_img" src="img/shop_card_2_2.png" alt="photo"></a>
                         </td>
                         <td class="col1 b_b">
                             <p class="product_details_text">Mango People T-shirt</p> 
@@ -481,7 +541,7 @@
                     </tr>
                     <tr>
                         <td class="row_styles b_b">
-                            <a href="#"><img class="table_img" src="img/shop_card_3_1.png" alt="photo"></a>
+                            <a href="single page.html"><img class="table_img" src="img/shop_card_3_1.png" alt="photo"></a>
                         </td>
                         <td class="col1 b_b">
                             <p class="product_details_text">Mango People T-shirt</p> 
@@ -596,7 +656,7 @@
                         <div class="footer_item">
                             <h3 class="footer_heading">COMPANY</h3>
                             <ul class="footer_menu">
-                                <li class="footer_menu_list"><a class="footer_menu_link" href="#">Home</a></li>
+                                <li class="footer_menu_list"><a class="footer_menu_link" href="index.html">Home</a></li>
                                 <li class="footer_menu_list"><a class="footer_menu_link" href="#">Shop</a></li>
                                 <li class="footer_menu_list"><a class="footer_menu_link" href="#">About</a></li>
                                 <li class="footer_menu_list"><a class="footer_menu_link" href="#">How It Works</a></li>

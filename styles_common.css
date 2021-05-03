@@ -59,13 +59,14 @@
 
 .search_form {
     display: flex;
-    padding-left: 37px;
+    padding-left: 36px;
 }
 
 .search_form input[type=text] {
     padding: 11px 90px 11px 14px;
     background-color: #FFFFFF;
     border: 1px solid #e6e6e6;
+    border-left: 0;
     outline: none;
     box-sizing: border-box;
     font-size: 14px;
@@ -94,7 +95,7 @@ details > summary {
     list-style: none;
 }
 
-summary::after {
+.browse_button::after {
     content: "\f0d7";
     font-family: "FontAwesome";
     display: inline-block;
@@ -145,6 +146,167 @@ summary::after {
     padding-left: 8px;
 }*/
 
+.cart_box {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 19px; 
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    margin-top: 16px;
+    display: none;
+    flex-direction: column;
+}
+
+.header_basket_parent {
+    position: relative;
+}
+
+.header_basket_parent:hover .cart_box {
+    display: flex;
+}
+
+.cart_box:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+}
+
+
+
+.cart_item, .cart_item_text, .cart_stars, .cart_form, .cart_item_right,.cart_buttons {
+    display: flex;
+}
+
+.cart_item_info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.cart_buttons {
+    flex-wrap: wrap;
+}
+
+.cart_stars {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cart_item_right {
+    padding-left: 55px;
+}
+
+.cart_img {
+    width: 72px;
+    height: 85px;
+}
+.cart_pic {
+    display: block;
+    width: 100%;
+}
+
+.cart_img:hover {
+    box-shadow: 0 0 10px grey; 
+}
+
+.cart_item_txt {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.fa_cart {
+    color: #e4af48;
+}
+
+.fa_table {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #c0c0c0;
+}
+
+.fa_table:hover {
+    color: #f16d7f;
+}
+
+.cart_form_txt {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.cart_item_devider {
+    border-bottom: 1px solid rgba(237,237,237,0.74);
+    margin-bottom: 19px;
+    margin-top: 19px;
+}
+
+.total_cart {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.total_txt {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.cart_button {
+    padding: 19px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.cart_button:nth-of-type(1) {
+    margin-bottom: 11px;
+}
+
+.button_grey {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    outline: none;
+    text-align: center; 
+    color: #4a4a4a;
+}
+
+.button_grey:hover {
+    background-color: #E6E6E6;
+    color: #ffffff;
+    border: solid 1px #E6E6E6;
+    outline: none;
+}
+
 .dropdown_box {
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
@@ -188,20 +350,13 @@ summary::after {
     color: #f16d7f;
 }
 
-
-
-/*.search-form::after {
-    content: "";
-    clear: both;
-    display: table;
-}*/
-
 .button_site {
     text-decoration: none;
     background-color:#F16D7F;
     color: #ffffff;
     border: solid 1px #ececec;
     outline: none;
+    text-align: center;
 }
 
 .my_account {
@@ -249,9 +404,13 @@ summary::after {
     padding: 20px 25px;
 } 
 
-.menu-link:active {
+.menu-link-active {
     border-bottom: 3px solid #ef5b70;
     outline: none;
+}
+
+.menu-link:hover {
+    color: #ef5b70;
 }
 
 .mega-box {
@@ -494,6 +653,11 @@ summary::after {
     /*float: left;*/
 }
 
+.subscribe_form input[type=email]:hover {
+    background-color: #ffffff;
+}
+
+
 .subscribe_form button[type=submit] {
     width: 104px;
     padding-left: 21px;
@@ -513,7 +677,12 @@ summary::after {
     /*cursor: pointer;
     float: left;*/
 }
-    
+
+.subscribe_form button[type=submit]:hover {
+    background-color: #ffffff;
+    color: #f16d7f;
+}   
+
 .subscribe_form::after {
     content: "";
     clear: both;
@@ -719,6 +888,44 @@ summary::after {
     color: #f16d7f;
 }
 
+
+
+
+
+.add_box {
+    position: absolute;
+    top: 98px;
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.add:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.add {
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 7px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.add_text {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
 /* Центрирование от родителя к ребёнку */
 
 .center_vertical {
@@ -741,6 +948,8 @@ summary::after {
     margin: auto;
 }
 
+
+
 .scale_rotation {
     transition: 1s; /* Время эффекта */
 }
@@ -749,3 +958,10 @@ summary::after {
     transform: rotate(90deg) scale(0.5);; /* Увеличиваем масштаб */
 }
   
+.scale {
+    transition: 1s;
+}
+
+.scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
